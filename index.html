@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Redirecting...</title>
+  <script>
+    const landers = ["/lander1/", "/lander2/", "/lander3/"];
+    const random = Math.floor(Math.random() * landers.length);
+    window.location.href = landers[random];
+  </script>
+</head>
+<body>
+  <p>Redirecting to a random landing page...</p>
+</body>
+</html>
