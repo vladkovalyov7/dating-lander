@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <title>Ultima șansă azi!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body { font-family: Arial, sans-serif; background: #fff8f4; text-align: center; padding: 20px; color: #333; }
+    .title { font-size: 22px; color: #d30000; }
+    .timer { font-size: 36px; font-weight: bold; margin: 10px 0; color: #000; }
+    .cta { display: inline-block; background: #d30000; color: white; padding: 15px 25px; text-decoration: none; border-radius: 10px; font-size: 18px; }
+  </style>
+</head>
+<body>
+  <h1 class="title">⚠️ Doar 5 conturi gratuite rămase pentru bărbați din România!</h1>
+  <p>Grăbește-te — rezervă-ți locul acum. Oferta expiră în:</p>
+  <div class="timer" id="countdown">00:59</div>
+  <a class="cta" href="https://41a614.svbasmnckaw.cc/?target=-7EBNQCgQAAAdTJAQDU28ABQEBEREKEQkKEQ1CEQ0SAAF_YWRjb21ibwEx&subpub=propellerads">Înscrie-te Gratuit »</a>
+  <script>
+    let timeLeft = 59;
+    const countdown = document.getElementById("countdown");
+    setInterval(() => {
+      if (timeLeft <= 0) return;
+      timeLeft--;
+      countdown.textContent = `00:${timeLeft.toString().padStart(2, '0')}`;
+    }, 1000);
+  </script>
+</body>
+</html>
