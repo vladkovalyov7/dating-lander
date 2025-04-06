@@ -2,22 +2,61 @@
 <html lang="ro">
 <head>
   <meta charset="UTF-8">
-  <title>Femei reale din România</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ultima Șansă pentru România!</title>
   <style>
-    body { margin: 0; background: black; color: white; font-family: sans-serif; text-align: center; }
-    .video-container { position: relative; padding-top: 56.25%; }
-    video { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
-    .cta { padding: 20px; background: #d30000; text-decoration: none; margin-top: 10px; color: white; font-size: 20px; border-radius: 10px; display: inline-block; }
+    body {
+      font-family: Arial, sans-serif;
+      background: #fff0f0;
+      color: #333;
+      text-align: center;
+      padding: 30px;
+      margin: 0;
+    }
+    .timer-container {
+      background: #d30000;
+      color: white;
+      padding: 50px;
+      border-radius: 20px;
+      box-shadow: 0px 10px 30px rgba(0,0,0,0.2);
+      margin-top: 100px;
+    }
+    .timer {
+      font-size: 60px;
+      font-weight: bold;
+      margin: 20px 0;
+    }
+    .cta {
+      background: #ff4500;
+      color: white;
+      font-size: 1.5rem;
+      padding: 15px 30px;
+      border-radius: 30px;
+      text-decoration: none;
+      box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+      transition: background 0.3s;
+    }
+    .cta:hover {
+      background-color: #ff6347;
+    }
   </style>
 </head>
 <body>
-  <h1>Femei singure caută bărbați din zona ta</h1>
-  <div class="video-container">
-    <video autoplay muted playsinline loop>
-      <source src="https://cdn.pixabay.com/video/2023/04/19/161611-823469129_large.mp4" type="video/mp4">
-    </video>
+  <h1>⚠️ Doar 5 locuri rămase pentru bărbați din România!</h1>
+  <p>Nu pierde ocazia de a întâlni femei reale! Oferta expiră în:</p>
+  <div class="timer-container">
+    <div class="timer" id="countdown">01:00</div>
+    <a href="https://41a614.svbasmnckaw.cc/?target=-7EBNQCgQAAAdTJAQDU28ABQEBEREKEQkKEQ1CEQ0SAAF_YWRjb21ibwEx&subpub=propellerads" class="cta">Începe acum »</a>
   </div>
-  <a class="cta" href="https://41a614.svbasmnckaw.cc/?target=-7EBNQCgQAAAdTJAQDU28ABQEBEREKEQkKEQ1CEQ0SAAF_YWRjb21ibwEx&subpub=propellerads">Vezi profiluri acum »</a>
+  <script>
+    let timeLeft = 60;
+    const countdown = document.getElementById("countdown");
+    setInterval(() => {
+      if (timeLeft <= 0) return;
+      timeLeft--;
+      countdown.textContent = `00:${timeLeft.toString().padStart(2, '0')}`;
+    }, 1000);
+  </script>
 </body>
 </html>
+
